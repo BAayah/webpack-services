@@ -1,0 +1,53 @@
+// .swiper {
+//   min-width: 100%;
+//   height: auto;
+//   width: auto;
+// }
+// .swiper-slide {
+//   width: auto;
+// }
+// .swiper-pagination {
+//   position: static;
+//   padding-bottom: 24px;
+//   background-color: $main-backg;
+// }
+
+// @media (min-width: 768px) {
+//   .swiper-wrapper {
+//     flex-wrap: wrap;
+//     gap: 16px 24px;
+//   }
+//   .block-group .swiper .swiper-1 {
+//     width: 100%;
+//   }
+//   .block-group__button.swiper-slide {
+//     width: 224px;
+//   }
+//   .table.space.swiper-wrapper {
+//     gap: 0px;
+//   }
+// }
+// @media (min-width: 1440px) {
+//   .swiper-wrapper {
+//     gap: 16px 32px;
+//   }
+// }
+
+// .swiper-wrapper {
+//   display: flex;
+//   flex-wrap: nowrap;
+//   overflow: scroll;
+//   scrollbar-width: none;
+//   gap: 16px;
+//   transition: 0.5s ease-out;
+// }
+// @media (min-width: 768px) {
+//   .swiper-wrapper {
+//     display: flex;
+//     flex-wrap: wrap;
+//     overflow: scroll;
+//     scrollbar-width: none;
+//     gap: 16px;
+//     transition: 0.5s ease-out;
+//   }
+// }

@@ -1,0 +1,115 @@
+@import "./header/header.scss";
+@import "./services/services.scss";
+@import "./brands/brands.scss";
+@import "./high-technology/high-technology.scss";
+@import "./prices/prices.scss";
+@import "./footer/footer.scss";
+@import "./modals/modal-call/modal-call.scss";
+@import "./modals/modal-message/modal-message.scss";
+@import "./modals/modalLink/modalLink.scss";
+@import "./modals/modalSendBtn/modalSendBtn.scss";
+@import "./aside/aside.scss";
+@import "../style/swiper/swiper.scss";
+@import "./modals/modal-mess-text/modal-message-text.scss";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "TTLakes";
+  list-style-type: none;
+  text-decoration: none;
+  color: $main-text-color;
+}
+.container {
+  padding: 0;
+  position: relative;
+  max-width: 1440px;
+  margin: auto;
+}
+.overlay {
+  position: fixed;
+  visibility: hidden;
+  opacity: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(23, 23, 67, 0.2);
+  transition: opacity 0.3s ease-in-out, visibility 0s linear 0.3s;
+  z-index: 500;
+  backdrop-filter: blur(5px);
+}
+.open {
+  opacity: 1;
+  visibility: visible;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.block-show__button {
+  position: relative;
+  background-color: $background;
+  border: none;
+  font-size: 16px;
+  font-weight: 500;
+  color: $main-text-color;
+  padding-left: 24px;
+  cursor: pointer;
+  margin-left: 24px;
+  padding-bottom: 24px;
+  
+}
+.block-show__button::before {
+  content: url(images/expand.png);
+  position: absolute;
+  left: -6px;
+  top: -2px;
+  transition: transform 0.5s ease-out;
+}
+
+.block-show__button.active::before {
+  transform: rotate(180deg);
+}
+.pc {
+  display: none;
+}
+.tablet {
+  display: none;
+}
+@media (min-width: 768px) {
+  .tablet {
+    display: flex;
+  }  
+}
+@media (min-width: 1440px) {
+  
+  .container {
+    display: flex;
+    overflow-x: hidden;
+  }
+  .burger-close {
+    display: block;
+  }
+  #burger {
+    display: none;
+  }
+  .main-footer {
+    display: flex;
+    flex-direction: column;
+    margin-left: 320px;
+    width: 80%;
+  }
+  .pc {
+    display: flex;
+  }
+  .block-show__button {
+    width: 240px;    
+    position: relative;   
+    background-color: transparent; 
+    margin-left: 32px;
+  }
+  .block-show__button::before {
+    background-color: transparent;
+  }
+  .block-show__button.active::before {
+    top: -10px;
+  }
+}

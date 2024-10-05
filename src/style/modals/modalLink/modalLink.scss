@@ -1,0 +1,7 @@
+.modal-message__link {
+  color: $icons-btns;
+}
+.modal-message__link:hover {
+  transition: 0.5s;
+  text-shadow: 0px 1px 1px rgba(255, 62, 121, 0.8);
+}
